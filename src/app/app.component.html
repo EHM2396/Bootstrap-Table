@@ -1,0 +1,17 @@
+&lt;h1&gt;Angular 13 Datatables Example - Tutsmake.com&lt;/h1&gt;
+&lt;table datatable [dtOptions]="dtOptions" class="row-border hover"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;ID&lt;/th&gt;
+      &lt;th&gt;Title&lt;/th&gt;
+      &lt;th&gt;Body&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr *ngFor="let post of posts"&gt;
+      &lt;td&gt;{{ post.id }}&lt;/td&gt;
+      &lt;td&gt;{{ post.title }}&lt;/td&gt;
+      &lt;td&gt;{{ post.body }}&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
